@@ -4814,21 +4814,28 @@ Progress bars
     background-color: #0084ff;
     color: #fff; }
 
-.portlet-box .red{
-  background-color: #ff9980;
+.portlet-box .turquoise{
+  background-color: #4abdac;
 }
 .portlet-box .orange{
-  background-color: #ffcc80;
+  background-color: #fc4a1a;
 }
-.portlet-box .yellow-orange{
-  background-color: #ffcc00;
+.portlet-box .grey{
+  background-color: #dfdce3;
 }
 .portlet-box .yellow{
-  background-color: #ffff80;
+  background-color: #f7b733;
 }
-.portlet-box span{
+.portlet-box .pill{
+  width: 10%;
+  height: 10%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
   float:right;
-  text-align: right;
+  text-align: center;
+  color: white;
+  font-size: .8em;
 }
 
 .portlet-box.portlet-fullHeight {
