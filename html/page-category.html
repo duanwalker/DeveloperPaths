@@ -9,6 +9,7 @@
   <link href="lib/bootstrap/bootstrap.min.css" rel="stylesheet">
   <!--Common Plugins CSS -->
   <link href="css/plugins/plugins.css" rel="stylesheet">
+  <link href="scss/_custom-forms.scss" rel="stylesheet">
   <!--fonts-->
   <link href="lib/line-icons/line-icons.css" rel="stylesheet">
   <link href="lib/font-awesome/fontawesome-all.min.css" rel="stylesheet">
@@ -208,94 +209,564 @@
                                         <div id="accordion" class="card-accordions">
                                             <div class="card mb-2">
                                                 <div class="card-header" id="headingOne">
-                                                        <a class="collapse-title" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                        <a class="collapse-title collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                                          Table Layout
                                                          <div class="pill turquoise">Beginner</div>
                                                         </a>
                                                 </div>
 
-                                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                                <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                                                     <div class=" card-body text-muted" href="#">
-                                                        Step 1 Title:  Step 1 Description.
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseOneOne"> Step 1 Video Tutorial: 
+                                                              </a> 
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseOneOne" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Video Tutorial Title</h7>
+                                                                    <div class="video-tutorial">
+                                                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3"> 
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div> 
+                                                          </div> 
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 2 Title:  Step 2 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseTwoOne"> Step 2 Hands On Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseTwoOne" class=" panel-collapse collapse">
+                                                            <div class="panel-body">          
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Step 2 Practice Project Content: Follow the link below to complete your practice content.</h7> 
+                                                                    <br>
+                                                                    <a href="#">practice project link</a>
+                                                                  </div>
+                                                                  <div class="col-lg-3">
+                                                                    <div class="checkbox">
+                                                                      <div><input type="checkbox"> 
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>  
+                                                            </div> 
+                                                          </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 3 Title:  Step 3 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseThreeOne"> Step 3 Real World Tutorial: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseThreeOne" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Video Tutorial Title</h7>
+                                                                    <div class="video-tutorial">
+                                                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3"> 
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>                             
+                                                            </div> 
+                                                          </div>    
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 4 Title:  Step 4 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseFourOne"> Step 4 Real World Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseFourOne" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Real World Practice: </h7>
+                                                                    <br>
+                                                                    <a href="#">video introduction link</a>
+                                                                    <br>
+                                                                    <a href="#">video solution link</a>
+                                                                  </div>
+                                                                  <div class="col-lg-3">
+                                                                    <div class="checkbox">
+                                                                    <div class="#"><input class="#" id="#" type="checkbox"> 
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                </div>
+                                                              </div>
+                                                            </div> 
+                                                          </div>               
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card mb-2">
                                                 <div class="card-header" id="headingTwo">
                                                         <a class="collapse-title collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                          Forms
-                                                          <div class="pill turquoise">Beginner</div>
+                                                         Forms
+                                                         <div class="pill turquoise">Beginner</div>
                                                         </a>
                                                 </div>
-                                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+
+                                                <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordion">
                                                     <div class=" card-body text-muted" href="#">
-                                                        Step 1 Title:  Step 1 Description.
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseOneTwo"> Step 1 Video Tutorial: 
+                                                              </a> 
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseOneTwo" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Video Tutorial Title</h7>
+                                                                    <div class="video-tutorial">
+                                                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3"> 
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+
+                                                            </div> 
+                                                          </div>
+                                                          
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 2 Title:  Step 2 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseTwoTwo"> Step 2 Hands On Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseTwoTwo" class=" panel-collapse collapse">
+                                                            <div class="panel-body">          
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Step 2 Practice Project Content: Follow the link below to complete your practice content.</h7> 
+                                                                    <br>
+                                                                    <a href="#">practice project link</a>
+                                                                  </div>
+                                                                  <div class="col-lg-3">
+                                                                    <div class="checkbox">
+                                                                      <div><input type="checkbox"> 
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>  
+                                                            </div> 
+                                                          </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 3 Title:  Step 3 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseThreeTwo"> Step 3 Real World Tutorial: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseThreeTwo" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Video Tutorial Title</h7>
+                                                                    <div class="video-tutorial">
+                                                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3"> 
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>                             
+                                                            </div> 
+                                                          </div>    
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 4 Title:  Step 4 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseFourTwo"> Step 4 Real World Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseFourTwo" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Real World Practice: </h7>
+                                                                    <br>
+                                                                    <a href="#">video introduction link</a>
+                                                                    <br>
+                                                                    <a href="#">video solution link</a>
+                                                                  </div>
+                                                                  <div class="col-lg-3">
+                                                                    <div class="checkbox">
+                                                                      <div class="#"><input class="#" id="#" type="checkbox"> 
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+
+                                                            </div> 
+                                                          </div>
+                                                          
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card mb-2">
                                                 <div class="card-header" id="headingThree">
                                                         <a class="collapse-title collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                                        Media Queries
-                                                        <div class="pill yellow">Intermediate</div>
+                                                         Media Queries
+                                                         <div class="pill yellow">Intermediate</div>
                                                         </a>
                                                 </div>
-                                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+
+                                                <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordion">
                                                     <div class=" card-body text-muted" href="#">
-                                                        Step 1 Title:  Step 1 Description.
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseOneThree"> Step 1 Video Tutorial: 
+                                                              </a> 
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseOneThree" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Video Tutorial Title</h7>
+                                                                    <div class="video-tutorial">
+                                                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3"> 
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div> 
+                                                          </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 2 Title:  Step 2 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseTwoThree"> Step 2 Hands On Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseTwoThree" class=" panel-collapse collapse">
+                                                            <div class="panel-body">          
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Step 2 Practice Project Content: Follow the link below to complete your practice content.</h7> 
+                                                                    <br>
+                                                                    <a href="#">practice project link</a>
+                                                                  </div>
+                                                                  <div class="col-lg-3">
+                                                                    <div class="checkbox">
+                                                                      <div><input type="checkbox"> 
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>  
+                                                            </div> 
+                                                          </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 3 Title:  Step 3 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseThreeThree"> Step 3 Real World Tutorial: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseThreeThree" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Video Tutorial Title</h7>
+                                                                    <div class="video-tutorial">
+                                                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3"> 
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>                             
+                                                            </div> 
+                                                          </div>    
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 4 Title:  Step 4 Description.
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseFourThree"> Step 4 Real World Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseFourThree" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Real World Practice: </h7>
+                                                                    <br>
+                                                                    <a href="#">video introduction link</a>
+                                                                    <br>
+                                                                    <a href="#">video solution link</a>
+                                                                  </div>
+                                                                  <div class="col-lg-3">
+                                                                    <div class="checkbox">
+                                                                    <div class="#"><input class="#" id="#" type="checkbox"> 
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                                </div>
+                                                              </div>
+                                                              
+                                                            </div> 
+                                                          </div>
+                                                          
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="card mb-2">
-                                                <div class="card-header" id="headingThree">
+                                                <div class="card-header" id="headingFour">
                                                         <a class="collapse-title collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                                        Fourth Topic
-                                                        <div class="pill orange">Advanced</div>
+                                                         Step 4
+                                                         <div class="pill orange">Advanced</div>
                                                         </a>
                                                 </div>
-                                                <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+
+                                                <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordion">
                                                     <div class=" card-body text-muted" href="#">
-                                                        Step 1 Title:  Step 1 Description.
-                                                        <span>Beginner</span>
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseOneFour"> Step 1 Video Tutorial: 
+                                                              </a> 
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseOneFour" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <h7>Video Tutorial Title</h7>
+                                                                <div class="video-tutorial">
+                                                                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                </div>
+                                                                <div class="checkbox">
+                                                                  <div>
+                                                                    <input type="checkbox"> 
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+
+                                                            </div> 
+                                                          </div>
+                                                          
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 2 Title:  Step 2 Description.
-                                                        <span>Beginner</span>
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseTwoFour"> Step 2 Hands On Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseTwoFour" class=" panel-collapse collapse">
+                                                            <div class="panel-body">          
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Step 2 Practice Project Content: Follow the link below to complete your practice content.</h7> 
+                                                                    <br>
+                                                                    <a href="#">practice project link</a>
+                                                                  </div>
+                                                                  <div class="col-lg-3">
+                                                                    <div class="checkbox">
+                                                                      <div><input type="checkbox"> 
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>  
+                                                            </div> 
+                                                          </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 3 Title:  Step 3 Description.
-                                                        <span>Intermediate</span>
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseThreeFour"> Step 3 Real World Tutorial: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed tutorial description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseThreeFour" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <div class="row">
+                                                                  <div class="col-lg-9">
+                                                                    <h7>Video Tutorial Title</h7>
+                                                                    <div class="video-tutorial">
+                                                                      <iframe width="560" height="315" src="https://www.youtube.com/embed/Et2khGnrIqc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                                                                    </div>
+                                                                  </div>
+                                                                  <div class="col-lg-3"> 
+                                                                    <div class="checkbox">
+                                                                        <input type="checkbox" class="form-check-input">
+                                                                    </div>
+                                                                  </div>
+                                                                </div>
+                                                              </div>                             
+                                                            </div> 
+                                                          </div>    
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
-                                                    <div class=" card-body text-muted" href="#" >
-                                                        Step 4 Title:  Step 4 Description.
-                                                        <span>Advanced</span>
+                                                    <div class=" card-body text-muted" href="#">
+                                                      <div class="panel-group">
+                                                        <div class="panel panel-default">
+                                                          <div class="panel-heading">
+                                                            <h6 class="panel-title">
+                                                              <a data-toggle="collapse" href="#collapseFourFour"> Step 4 Real World Practice: 
+                                                              </a>
+                                                            </h6>
+                                                            <p>Detailed practice description. Lorem ipsum dolor text....</p>
+                                                          <div id= "collapseFourFour" class=" panel-collapse collapse">
+                                                            <div class="panel-body">
+                                                              <div class="card-body">
+                                                                <h7>Real World Practice: </h7>
+                                                                <br>
+                                                                <a href="#">video introduction link</a>
+                                                                <br>
+                                                                <a href="#">video solution link</a>
+                                                                <div class="checkbox">
+                                                                  <div class="#"><input class="#" id="#" type="checkbox"> 
+                                                                  </div>
+                                                                </div>
+                                                              </div>
+                                                            </div> 
+                                                          </div>
+                                                          
+                                                          </div>
+                                                        </div>
+                                                      </div>
                                                     </div>
                                                 </div>
                                             </div>

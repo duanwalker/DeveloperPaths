@@ -4814,6 +4814,7 @@ Progress bars
     background-color: #0084ff;
     color: #fff; }
 
+/*Custom*/
 .portlet-box .turquoise{
   background-color: #4abdac;
 }
@@ -4836,6 +4837,12 @@ Progress bars
   text-align: center;
   color: white;
   font-size: .8em;
+}
+.portlet-box .checkbox{
+  float:right;
+  position:relative;
+  top:50%;
+  bottom:50%;
 }
 
 .portlet-box.portlet-fullHeight {
