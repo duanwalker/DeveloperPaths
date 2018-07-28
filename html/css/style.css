@@ -4844,6 +4844,38 @@ Progress bars
   top:50%;
   bottom:50%;
 }
+.portlet-box .portlet-accordion {
+    background-color: #eee;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 10px;
+    transition: 0.4s;
+    float:left;
+}
+
+/*.portlet-box .active, .portlet-accordion:hover {
+    background-color: #ccc;
+}
+
+.portlet-box .portlet-accordion:before {
+    content: '\02795';
+    color: white;
+    font-weight: normal;
+    float: right;
+    margin-right: 5px;
+}
+
+.portlet-box .active:after {
+    content: "\2796";
+    color: white;
+}*/
+
+
 
 .portlet-box.portlet-fullHeight {
   height: calc(100% - 30px); }
@@ -5157,27 +5189,28 @@ Accordions
       color: #0084ff; }
 
 .collapse-title:before {
-  position: absolute;
+  position: relative;
   display: inline-block;
   transition: all .2s;
   -webkit-transition: all .2s;
-  right: 1.25rem;
+  right: .5rem;
   top: 50%;
   height: 12px;
   width: 12px;
   text-align: center;
-  line-height: 12px;
+  line-height: 50%;
   margin-top: -4px;
   font-size: 16px;
-  content: "\f107";
+  content: "\25B7";
   font-family: 'Font Awesome 5 Free';
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   font-weight: 900; }
 
 .collapse-title.collapsed:before {
-  transform: rotate(-90deg);
-  -webkit-transform: rotate(-90deg); }
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg); }
+
 
 /*
 page breadcrumbs
