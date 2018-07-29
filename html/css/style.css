@@ -109,7 +109,7 @@ pre {
 
 .text-muted {
   color: inherit !important;
-  opacity: 0.6 !important; }
+  /*opacity: 0.6 !important;*/ }
 
 .no-padding {
   padding: 0px !important; }
